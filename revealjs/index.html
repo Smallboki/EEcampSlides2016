@@ -1,0 +1,1040 @@
+<!doctype html>
+<html lang="en">
+
+	<head>
+		<meta charset="utf-8">
+
+		<title>reveal.js - The HTML Presentation Framework</title>
+
+		<meta name="description" content="A framework for easily creating beautiful presentations using HTML">
+		<meta name="author" content="2015 EpisodE camp">
+
+		<meta name="apple-mobile-web-app-capable" content="yes" />
+		<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
+
+		<link rel="stylesheet" href="css/reveal.css">
+		<link rel="stylesheet" href="css/theme/black.css" id="theme">
+
+		<!-- Code syntax highlighting -->
+		<link rel="stylesheet" href="lib/css/zenburn.css">
+
+		<!-- Printing and PDF exports -->
+		<script>
+			var link = document.createElement( 'link' );
+			link.rel = 'stylesheet';
+			link.type = 'text/css';
+			link.href = window.location.search.match( /print-pdf/gi ) ? 'css/print/pdf.css' : 'css/print/paper.css';
+			document.getElementsByTagName( 'head' )[0].appendChild( link );
+		</script>
+
+		<!--[if lt IE 9]>
+		<script src="lib/js/html5shiv.js"></script>
+		<![endif]-->
+	</head>
+	<body>
+		<div class="reveal">
+			<div class="slides">
+				<section>
+					<section>
+					<h1>四軸平衡<span style="color:#FFFF00"> ×</span> PYTHON</h1>
+					<p>
+						<small>Created by<b style="color:#FFFF00" > Teaching Group, EEcamp</b></small>
+					</p> 
+				    </section >
+					<section data-background="quad.jpg">
+					</section>
+					<section>
+						<h2>Before <br>our fantastatic adventure</h2>
+					</section>
+          <section>
+            <h2 style="color:#FFFF00">Today's target</h2>
+            <p>使四軸能平衡的飛行</p>
+			<img src="pic/flight.png">
+          </section>
+          <section>
+            <h2>Now the adventure begins...</h2>
+            <img src="pic/adventure.jpg">
+          </section>
+				</section>
+        </section>
+				<section>
+					<h2>大綱</h2>
+					<br>
+					<!--$ \int_{0}^{\infty} \frac{sin(x)}{x} dx = \frac{\pi}{2} $-->
+					<ul>
+						<li>什麼是程式語言</li>
+						<br>
+						<li>變數、if else、迴圈</li>
+						<br>
+						<li>一題閱讀測驗</li>
+					</ul>
+				</section>
+				<section>
+					<section>
+						<h2>什麼是程式語言！？</h2>
+						<p>WTF is a Programming Language!?</p>
+					</section>
+					<section>
+						<h2>跟</h2><h2 class="fragment" style="color:#FFFF00" >電腦</h2><h2>溝通的語言</h2>
+					</section>	
+					<section data-background="Hello_1.jpg">
+						<h2>ＸＸ</h2>
+						<h2>說你好</h2>
+					</section>
+					<section data-background="world.jpg">
+						<p style="font-size: 60px ">>>print("Hello, world!")</p>
+					</section>	
+				</section>
+				<section>
+					<section>
+						<h2>執行Python程式</h2>
+					</section>
+					<section>
+						<p style="font-size:60px">step1: 開啟終端機(Terminal)</p>
+						<p>方法: 滑鼠右鍵->開啟終端機 or Ctrl+Alt+T</p>
+						<div style="width:1000px">
+						<pre><code  style="font-size: 40px; padding: 20px 20px;"class="python" data-trim contenteditable>
+% >> ls
+
+						</code></pre>
+						</div>
+					</section>
+					<section>
+						<h3>step2: 將路徑移至桌面</h3>
+						<p>方法: 在終端機輸入</p>
+						<div style="width:1000px">
+						<pre><code  style="font-size: 40px;"class="sh" data-trim contenteditable>
+eecamp@eecamp in ~
+
+% >> cd  ~/Desktop
+						</code></pre>
+						</div>
+					</section>
+					<section>
+						<h3>step3: 創建.py檔</h3>
+						<p align="left">  方法:</p>
+						<div style="width:1000px">
+						<pre><code  style="font-size: 40px;"class="sh" >
+eecamp@eecamp in ~/Desktop
+
+% >> subl FileName
+						</code></pre>
+						</div>
+						<div style="width:1000px">
+						<p align="left">ex:</p>
+						<pre><code  style="font-size: 40px;"class="sh" >
+eecamp@eecamp in ~/Desktop
+
+% >> subl test.py
+						</code></pre>
+						</div>
+						
+					</section>
+					<section>
+						<h3>step4: 輸入code</h3>
+						<p>方法: 打上 print("Hello World!")</p>
+						<pre><code  style="font-size: 40px; padding: 20px 20px;"class="python" data-trim contenteditable>
+print("Hello World!")
+
+						</code></pre>
+					</section>
+					<section>
+						<h3>step5: 存檔&離開</h3>
+						<p>方法: 左上角 File->Save or Ctrl + S</p>
+						<p>方法: 左上角 File->Quit or Ctrl + Q</p>
+					</section>
+					<section>
+						<h3>step6: 執行.py檔</h3>
+						<p>如Terminal仍在執行sublime，輸入Ctrl + C 中斷</p>
+						</br>
+						<p align="left">  方法:</p>
+						<div style="width:1000px">
+						<pre><code  style="font-size: 40px; padding: 20px 20px;"class="sh" data-trim contenteditable>
+eecamp@eecamp in ~/Desktop
+
+% >> python3  FileName
+						</code></pre>
+						</div>
+						<div>
+						<p align="left">ex:</p>
+						<pre><code  style="font-size: 40px; padding: 20px 20px;"class="sh" data-trim contenteditable>
+eecamp@eecamp in ~/Desktop
+
+% >> python3 test.py
+						</code></pre>
+						</div>
+					</section>
+				</section>
+				<section>
+					<section>
+						<h2>變數</h2>
+						<p>Variables</p>
+					</section>
+					<section data-background="variable.jpg">
+						
+					</section>
+					<section>
+						<h3>舉個簡單的例子</h3>
+						<center>
+						<div style="width:500px">
+						<pre><code  style="font-size: 40px;"class="python">
+a=1
+
+b=2
+
+b=a+b
+
+print(a)
+
+#1
+
+print(a+b)
+
+#4
+						</code></pre>
+					</div>
+					<p><span style="color:#FFFF00">'#'</span> is 
+						a <span style="color:#FFFF00">comment</span> , computer won't execute it
+					</p>
+						</center>
+					</section>
+				</section>
+				<section>
+					<section>
+						<h2>運算元</h2>
+						<p>operators</p>
+					</section>
+					<section>
+						<h3>算術運算元(I)</h3>
+						<pre><code  style="font-size: 40px; padding: 20px 20px;"class="python" data-trim contenteditable>
+a = 99 + 1
+
+b = 102 - 2
+
+c = 10 * 10
+
+d = 200 / 2
+						</code></pre>
+						
+					</section>
+					<section>
+						<h3>算術運算元(II)</h3>
+						<pre><code  style="font-size: 40px; padding: 20px 20px;"class="python" data-trim contenteditable>
+
+a = 10 % 3 
+
+b = 10 ** 2
+
+c = 10.89 // 2
+						</code></pre>
+						
+
+					</section>
+					<section>
+						<h3>Assignment Operator (I)</h3>
+						<pre><code  style="font-size: 40px; padding: 20px 20px;"class="python" data-trim contenteditable>
+a += 10 # a = a + 10
+
+b -= 10 # b = b - 10
+
+c *= 10 # c = c * 10
+
+d /= 10 # d = d / 10
+						</code></pre>	
+					</section>
+					<section>
+						<h3>Assignment Operator (II)</h3>
+						<pre><code  style="font-size: 40px; padding: 20px 20px;"class="python" data-trim contenteditable>
+
+a **= 10 # a = a ** 10
+
+b //= 10 # b = b // 10 
+						</code></pre>
+						
+
+					</section>
+					<section>
+						<h3>Comparision Operator</h3>
+						<pre><code  style="font-size: 40px; padding: 20px 20px;"class="python" data-trim contenteditable>
+a = 5
+
+print (a == 1 ) # False
+
+print (a > 2)   # True
+
+print (a < 2)   # False
+
+print (a >= 3)  # True
+
+print (a <= 2)  # False
+
+print ( a != 1)  # True
+
+						</code></pre>
+						
+					</section>
+					<section>
+						<h3>Logical Operators</h3>
+						<pre><code  style="font-size: 40px; padding: 20px 20px;"class="python" data-trim contenteditable>
+a = 1
+
+print(a == 1 and a > 0) # True
+
+print(a == 1 and a < 0) # False
+
+print(a == 1 or a < 0)   # True
+
+print(a == 0 or a < 0)   # False
+
+print(not a == 1)          # False
+
+						</code></pre>
+						
+					</section>
+
+				</section>
+				<section>
+					<section>
+						<h2>字串</h2>
+						<p>String</p>
+					</section>
+					<section>
+						<h3>一串字</h3>
+					</section>
+					<section>
+						<h3>"電機營"</h3>
+						<h3>'好棒棒'</h3>
+					</section>
+						<section>
+						<h3>舉個簡單的例子</h3>
+						<pre><code  style="font-size: 40px; padding: 20px 20px;"class="python" data-trim contenteditable>
+a="好 "
+
+b="慘"
+
+b=a+b
+
+print(a)   #輸出 好 
+
+print(a + b) #輸出 好 慘
+						</code></pre>
+	       				</section>
+
+				</section>
+				<section>
+					<section>
+						<h2>LIST</h2>
+						<p>一列東西</p>
+					</section>
+					<section data-background="List.jpg">
+					</section>
+					<section>
+						<h2>Zero-based</h2>
+						<p style="font-size:35px">從零開始數</p>
+					    <b style="font-size:35px"> a[0], a[1], a[2], ...</b>	
+					</section>
+					<section>
+						<h3>舉個簡單的例子</h3>
+						<center>
+						<pre><code  style="font-size: 30px;"class="python">
+a=[ "Episode", 2015, " × ", " is the BEST!", " EEcamp"]  
+
+print(a[1],a[4],a[2],a[0],a[3])
+
+#輸出2015 EEcamp × Episode is the BEST!
+						</code></pre>
+						</center>
+					</section>
+				</section>
+				<section>
+					<section>
+						<h2>判斷式</h2>
+						<p>if, elif(else if), else</p>
+					</section>
+					<section>
+						<p style="font-size:60px">if</p>	
+						<center><div style="width:500px">
+						<pre><code  style="font-size: 35px "class="python">
+if 判斷式:
+
+	要做的事
+						</code></pre></div>
+						<p>判斷式成立時，執行要做的事</p>
+						</center>
+					</section>
+					<section>
+						<h3>舉個簡單的例子</h3>
+						<center>
+						<pre><code  style="font-size: 35px "class="python">
+if WeatherToday=="颱風天": #如果今天是颱風天
+
+	GoWhitewaterRafting()  #去泛舟
+						</code></pre>
+						<p>判斷式成立時，才執行要做的事</p>
+					
+						</center>
+
+					</section>
+					<section>
+						<p style="font-size:60px">if... elif... </p>
+						<p>有<span style="color:#FFFF00">很多</span>判斷式<br>
+						要<span style="color:#FFFF00">一層一層</span>判斷<br>
+						並執行對應的事時使用</p>
+					</section>
+					<section>
+						<center>
+						<pre><code  style="font-size: 35px "class="python">
+if 判斷式1:
+
+	判斷式1成立時要做的事
+
+elif 判斷式2:
+
+	判斷式1不成立，且判斷式2成立時要做的事
+
+elif 判斷式3:
+	...
+						</code></pre>
+						</center>
+
+					</section>
+					<section>
+						<h3>舉個簡單的例子</h3>
+						<center>
+						<pre><code  style="font-size: 35px "class="python">
+if WeatherToday=="颱風天": #如果今天是颱風天
+
+	GoWhitewaterRafting()  #去泛舟
+
+elif WeatherToday=="下雨天": #如果今天下雨
+    
+	PrepareForEarthquake() #防震準備
+						</code></pre>
+						</center>					
+					</section>
+					<section>
+						<p style="font-size:60px">else</p>
+						<p>不然的話</p>	
+						<center>
+						<pre><code  style="font-size: 35px "class="python">
+if 判斷式1:
+
+	判斷式1成立時要做的事
+
+elif 判斷式2:
+
+	判斷式1不成立，且判斷式2成立時要做的事
+
+	...
+else:
+	前面所有判斷式不成立時，要做的事
+						</code></pre>
+						</center>
+					</section>
+					<section>
+						<h3>舉個簡單的例子</h3>
+						<center>
+						<pre><code  style="font-size: 35px "class="python">
+if Weather=="颱風天":      #若今天是颱風天
+
+	GoWhitewaterRafting()  #去泛舟
+
+elif Weather=="下雨天":    #如果今天下雨
+    
+	PrepareForEarthquake() #防震準備
+
+else:
+	GotoEEcamp()      #來參加電機營
+	
+						</code></pre>
+						</center>						
+					</section>
+				</section>
+				<section>
+					<section>
+						<p style="font-size:60px">迴圈(loop)</p>
+						<p>for, while</p>
+					</section>
+					<section>
+						<p style="font-size:60px">while</p>
+						<div style="width:1000px">
+						<pre><code  style="font-size: 40px;" class="python">
+while 判斷式:
+
+	要做的事
+						</code></pre>
+						</div>
+						<p>判斷式成立時，執行要做的事；<br>接著再檢查判斷式，若成立，再執行想做的事...</p>
+						
+						<div style="width:1000px" class="fragment">
+						<pre><code  style="font-size: 40px;" class="python" data-trim contenteditable>
+counter = 0
+
+while counter < 10:
+
+	print("電機營好棒棒")
+	
+	counter = counter + 1
+						</code></pre>
+						</div>
+					</section>
+					<section>
+						<h2>縮排</h2>
+						<div style="width:1000px" class="fragment">
+						<pre><code  style="font-size: 40px;" class="python" data-trim contenteditable>
+counter = 0
+
+while counter < 10:
+
+	print("電機營好棒棒")
+	
+	counter = counter + 1
+						</code></pre>
+						</div>
+						<div style="width:1000px" class="fragment">
+						<pre><code  style="font-size: 40px;" class="python" data-trim contenteditable>
+counter = 0
+
+while counter < 10:
+
+	print("電機營好棒棒")
+	
+counter = counter + 1
+						</code></pre>
+						</div>
+						<p class="fragment">兩者有何差別?</p>
+					</section>
+					<section>
+						<p style="font-size:60px">for</p>
+						<div style="width:1000px">
+						<pre><code  style="font-size: 40px;" class="python">
+for 變數 in listName:
+
+	要做的事
+						</code></pre>
+						</div>
+						<p>將變數帶入listName中的所有值，分別執行要做的事...</p>
+						
+						<div style="width:1000px" class="fragment">
+						<pre><code  style="font-size: 40px;" class="python" data-trim contenteditable>
+sum = 0
+
+aList = [1, 2, 3, 4, 5, 6]
+
+for element in aList:
+
+	sum = sum + element
+						</code></pre>
+						</div>
+						<p class="fragment">sum最終為多少...?</p>
+					</section>
+				</section>
+        <section>
+          <section>
+          <h2>PID controller</h2>
+            <div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 11;">
+                <ul>
+                    <li class="fragment" data-fragment-index="0">Proportional - 比例</li>
+                    <li class="fragment" data-fragment-index="1">Integral     - 積分</li>
+                    <li class="fragment" data-fragment-index="2">Derivative   - 微分</li>
+                    <li class="fragment" data-fragment-index="3">Controller   - 控制器</li>
+                </ul>
+            </div>
+          </section>
+          <section>
+          <h2>WTF is PID controller</h2>
+            <p>控制我們的四軸在各種誤差、外部干擾導致傾斜時，<br>回復到平衡狀態的控制器。</p>
+          </section>
+          <section>
+            <h2>P 的作用</h2>
+              <p class="fragment" data-fragment-index="0">簡單來講就是偏移量越多，給予的回復力越大,<br>成正比關係，以數學表示:</p>
+              <p class="fragment" data-fragment-index="1"><font color="FFFF00">$F_p = -k_p \cdot  x$</font></p>
+              <p class="fragment" data-fragment-index="2">但若只有 $P$ 沒有 $I$、$D$，<br>我們的四軸就會進行簡諧運動、停不下來...</p>
+              <p class="fragment" data-fragment-index="3">Open the firefox to see : )</p>
+          </section>
+          <section>
+            <h2>P + D 的作用</h2>
+      <div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 12;">
+                <!--NEEEEEEEEEEEEEEEEEEEEEEEEEED MODIFY-->
+        <p class="fragment" data-fragment-index="0">$D$ 的作用是指若四軸有旋轉的角速度，系統會給予一個反向於角速度的力。以數學表示:</p>
+        <p class="fragment" data-fragment-index="1"><font color="FFFF00">$F_d = - k_d \cdot \omega $(角速度)</font></p>
+        <p class="fragment" data-fragment-index="2">將$P$與$D$結合可使四軸漸漸趨近於平衡狀態，<br>不會處於震盪狀態。</p>
+        <p class="fragment" data-fragment-index="3">但若沒有 $I$，且機器本身並未完美，<br>可能平衡狀態會是斜的...</p>
+        <p class="fragment" data-fragment-index="4">Open the firefox to see : )</p>
+      </div>
+        </section>
+        <section>
+        <h2>P + I + D 的作用</h2>
+          <div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 11;">
+            <p class="fragment" data-fragment-index="0">$I$ 的作用是計算誤差對時間的累加(積分)，並做出修正。以數學表示:</p>
+            <p class="fragment" data-fragment-index="1"><font color="#FFFF00">$F_i = - k_i \cdot $ (誤差對時間的累加)</font> </p>
+            <p class="fragment" data-fragment-index="2">將 $P$, $I$, $D$ 結合就可以使四軸完美平衡啦!</p>
+            <font color="#FFFF00">
+            <p class="fragment" data-fragment-index="4"><br>$F = F_p + F_d + F_i$</p>
+            <p class="fragment" data-fragment-index="5">($F$ 為修正力)</p>
+            </font>
+            <p class="fragment" data-fragment-index="6">Open the firefox to see : )</p>
+        </div>
+        </section>
+        </section>
+      <section>
+		<section>
+			<h2>Challenge : 寫一個PID的函式</h2>
+			<p>在EEcampTeaching資料夾中打開terminal，輸入:</p>
+			<pre>
+				<code style="font-size: 30px ;padding:20px 20px"class="sh" data-trim contenteditable>
+eecamp@eecamp in ~/Desktop/EECampTeaching
+
+% >> coffee server.coffee -n
+				</code>
+			</pre>
+			<p>打開firefox,在網址輸入:</p>
+			<pre>
+				<code style="font-size: 40px ;padding:20px 20px"class="sh" data-trim contenteditable>
+localhost:8000
+				</code>
+			</pre>
+		</section>
+        <section>
+			<h2>Challenge : 寫一個PID的函式</h2> 
+				<pre>
+					<code style="font-size: 27px "class="python">
+def __init__(self, kp, ki, kd, *, imax):
+
+        super().__init__(kp, ki, kd, imax=imax)
+		
+        self.last_time = None
+
+	#定義...?
+
+def get_control(self,t,err,derr): 
+              
+    if self.last_time is None:
+
+        self.last_time = t
+    
+        return 0.
+
+    #算出up(P項)
+
+    #算出ud(D項)
+
+    #算出self.int_err (誤差對時間的累加)
+
+    #設定self.int_err (絕對值上限為self.int_restriction)
+
+    #算出ui(I項)
+
+    #更新 self.last_time
+
+    return (up + ui + ud)
+	
+					</code>
+				</pre>
+			</section>
+		</section>
+		<section>
+					<section>
+						<h2>Survival Guide(I)</h2>
+            <div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 11;">
+                <ul>
+                    <li class="fragment" data-fragment-index="0">Don't set <font color="#ffff00" size="14px">self.ki&nbsp&nbspself.kd&nbsp&nbspself.kp</font> on your own!</li>
+                    <li class="fragment" data-fragment-index="1">Use <font color="#ffff00" size="14px">Tab</font> for indent!</li>
+                    <li class="fragment" data-fragment-index="2">Modify the idiot code<font color="#ffff00" size="14px">(up=0,ui=0,ud=0)</font></li>
+                </ul>
+						<br>
+					</section>
+          <section>
+						<h2>Survival Guide(II)</h2>
+            <p class="fragment" data-fragment-index="0">If you have any problem,<br>
+              ask powerful team-leaders and teaching group : )
+            </p>
+            <p class="fragment" data-fragment-index="1">
+              <img src="pic/powerful_team.jpg">
+              </p>
+          </section>
+      </section>
+				</div>
+      </div>
+
+</body>	
+
+<!--	<body>
+
+		<div class="reveal">
+
+			<!-- Any section element inside of this container is displayed as a slide -->
+			<div class="slides">
+				<section>
+					<h1>Reveal.js</h1>
+					<h3>The HTML Presentation Framework</h3>
+					<p>
+						<small>Created by <a href="http://hakim.se">Hakim El Hattab</a> / <a href="http://twitter.com/hakimel">@hakimel</a></small>
+					</p>
+				</section>
+
+				<section>
+					<h2>Hello There</h2>
+					<p>
+						reveal.js enables you to create beautiful interactive slide decks using HTML. This presentation will show you examples of what it can do.
+					</p>
+				</section>
+
+				<!-- Example of nested vertical slides -->
+				<section>
+					<section>
+						<h2>Vertical Slides</h2>
+						<p>Slides can be nested inside of each other.</p>
+						<p>Use the <em>Space</em> key to navigate through all slides.</p>
+						<br>
+						<a href="#" class="navigate-down">
+							<img width="178" height="238" data-src="https://s3.amazonaws.com/hakim-static/reveal-js/arrow.png" alt="Down arrow">
+						</a>
+					</section>
+					<section>
+						<h2>Basement Level 1</h2>
+						<p>Nested slides are useful for adding additional detail underneath a high level horizontal slide.</p>
+					</section>
+					<section>
+						<h2>Basement Level 2</h2>
+						<p>That's it, time to go back up.</p>
+						<br>
+						<a href="#/2">
+							<img width="178" height="238" data-src="https://s3.amazonaws.com/hakim-static/reveal-js/arrow.png" alt="Up arrow" style="transform: rotate(180deg); -webkit-transform: rotate(180deg);">
+						</a>
+					</section>
+				</section>
+
+				<section>
+					<h2>Slides</h2>
+					<p>
+						Not a coder? Not a problem. There's a fully-featured visual editor for authoring these, try it out at <a href="http://slides.com" target="_blank">http://slides.com</a>.
+					</p>
+				</section>
+
+				<section>
+					<h2>Point of View</h2>
+					<p>
+						Press <strong>ESC</strong> to enter the slide overview.
+					</p>
+					<p>
+						Hold down alt and click on any element to zoom in on it using <a href="http://lab.hakim.se/zoom-js">zoom.js</a>. Alt + click anywhere to zoom back out.
+					</p>
+				</section>
+
+				<section>
+					<h2>Touch Optimized</h2>
+					<p>
+						Presentations look great on touch devices, like mobile phones and tablets. Simply swipe through your slides.
+					</p>
+				</section>
+
+				<section data-markdown>
+					<script type="text/template">
+						## Markdown support
+
+						Write content using inline or external Markdown.I'm Hsu YenMin.
+						Instructions and more info available in the [readme](https://github.com/hakimel/reveal.js#markdown).
+
+						```
+
+						<section data-markdown>
+						  ## Markdown support
+
+						  Write content using inline or external Markdown.
+						  Instructions and more info available in the [readme](https://github.com/hakimel/reveal.js#markdown).
+						</section>
+						```
+					</script>
+				</section>
+
+				<section>
+					<section id="fragments">
+						<h2>Fragments</h2>
+						<p>Hit the next arrow...</p>
+						<p class="fragment">... to step through ...</p>
+						<p><span class="fragment">... a</span> <span class="fragment">fragmented</span> <span class="fragment">slide.</span></p>
+
+						<aside class="notes">
+							This slide has fragments which are also stepped through in the notes window.
+						</aside>
+					</section>
+					<section>
+						<h2>Fragment Styles</h2>
+						<p>There's different types of fragments, like:</p>
+						<p class="fragment grow">grow</p>
+						<p class="fragment shrink">shrink</p>
+						<p class="fragment fade-out">fade-out</p>
+						<p class="fragment current-visible">current-visible</p>
+						<p class="fragment highlight-red">highlight-red</p>
+						<p class="fragment highlight-blue">highlight-blue</p>
+					</section>
+				</section>
+
+				<section id="transitions">
+					<h2>Transition Styles</h2>
+					<p>
+						You can select from different transitions, like: <br>
+						<a href="?transition=none#/transitions">None</a> -
+						<a href="?transition=fade#/transitions">Fade</a> -
+						<a href="?transition=slide#/transitions">Slide</a> -
+						<a href="?transition=convex#/transitions">Convex</a> -
+						<a href="?transition=concave#/transitions">Concave</a> -
+						<a href="?transition=zoom#/transitions">Zoom</a>
+					</p>
+				</section>
+
+				<section id="themes">
+					<h2>Themes</h2>
+					<p>
+						reveal.js comes with a few themes built in: <br>
+						<!-- Hacks to swap themes after the page has loaded. Not flexible and only intended for the reveal.js demo deck. -->
+						<a href="#" onclick="document.getElementById('theme').setAttribute('href','css/theme/black.css'); return false;">Black (default)</a> -
+						<a href="#" onclick="document.getElementById('theme').setAttribute('href','css/theme/white.css'); return false;">White</a> -
+						<a href="#" onclick="document.getElementById('theme').setAttribute('href','css/theme/league.css'); return false;">League</a> -
+						<a href="#" onclick="document.getElementById('theme').setAttribute('href','css/theme/sky.css'); return false;">Sky</a> -
+						<a href="#" onclick="document.getElementById('theme').setAttribute('href','css/theme/beige.css'); return false;">Beige</a> -
+						<a href="#" onclick="document.getElementById('theme').setAttribute('href','css/theme/simple.css'); return false;">Simple</a> <br>
+						<a href="#" onclick="document.getElementById('theme').setAttribute('href','css/theme/serif.css'); return false;">Serif</a> -
+						<a href="#" onclick="document.getElementById('theme').setAttribute('href','css/theme/blood.css'); return false;">Blood</a> -
+						<a href="#" onclick="document.getElementById('theme').setAttribute('href','css/theme/night.css'); return false;">Night</a> -
+						<a href="#" onclick="document.getElementById('theme').setAttribute('href','css/theme/moon.css'); return false;">Moon</a> -
+						<a href="#" onclick="document.getElementById('theme').setAttribute('href','css/theme/solarized.css'); return false;">Solarized</a>
+					</p>
+				</section>
+
+				<section>
+					<section data-background="#dddddd">
+						<h2>Slide Backgrounds</h2>
+						<p>
+							Set <code>data-background="#dddddd"</code> on a slide to change the background color. All CSS color formats are supported.
+						</p>
+						<a href="#" class="navigate-down">
+							<img width="178" height="238" data-src="https://s3.amazonaws.com/hakim-static/reveal-js/arrow.png" alt="Down arrow">
+						</a>
+					</section>
+					<section data-background="https://s3.amazonaws.com/hakim-static/reveal-js/image-placeholder.png">
+						<h2>Image Backgrounds</h2>
+						<pre><code>&lt;section data-background="image.png"&gt;</code></pre>
+					</section>
+					<section data-background="https://s3.amazonaws.com/hakim-static/reveal-js/image-placeholder.png" data-background-repeat="repeat" data-background-size="100px">
+						<h2>Tiled Backgrounds</h2>
+						<pre><code style="word-wrap: break-word;">&lt;section data-background="image.png" data-background-repeat="repeat" data-background-size="100px"&gt;</code></pre>
+					</section>
+					<section data-background-video="https://s3.amazonaws.com/static.slid.es/site/homepage/v1/homepage-video-editor.mp4,https://s3.amazonaws.com/static.slid.es/site/homepage/v1/homepage-video-editor.webm" data-background-color="#000000">
+						<div style="background-color: rgba(0, 0, 0, 0.9); color: #fff; padding: 20px;">
+							<h2>Video Backgrounds</h2>
+							<pre><code style="word-wrap: break-word;">&lt;section data-background-video="video.mp4,video.webm"&gt;</code></pre>
+						</div>
+					</section>
+					<section data-background="http://i.giphy.com/90F8aUepslB84.gif">
+						<h2>... and GIFs!</h2>
+					</section>
+				</section>
+
+				<section data-transition="slide" data-background="#4d7e65" data-background-transition="zoom">
+					<h2>Background Transitions</h2>
+					<p>
+						Different background transitions are available via the backgroundTransition option. This one's called "zoom".
+					</p>
+					<pre><code>Reveal.configure({ backgroundTransition: 'zoom' })</code></pre>
+				</section>
+
+				<section data-transition="slide" data-background="#b5533c" data-background-transition="zoom">
+					<h2>Background Transitions</h2>
+					<p>
+						You can override background transitions per-slide.
+					</p>
+					<pre><code style="word-wrap: break-word;">&lt;section data-background-transition="zoom"&gt;</code></pre>
+				</section>
+
+				<section>
+					<h2>Pretty Code</h2>
+					<pre><code data-trim contenteditable>
+function linkify( selector ) {
+  if( supports3DTransforms ) {
+
+    var nodes = document.querySelectorAll( selector );
+
+    for( var i = 0, len = nodes.length; i &lt; len; i++ ) {
+      var node = nodes[i];
+
+      if( !node.className ) {
+        node.className += ' roll';
+      }
+    }
+  }
+}
+					</code></pre>
+					<p>Code syntax highlighting courtesy of <a href="http://softwaremaniacs.org/soft/highlight/en/description/">highlight.js</a>.</p>
+				</section>
+
+				<section>
+					<h2>Marvelous List</h2>
+					<ul>
+						<li>No order here</li>
+						<li>Or here</li>
+						<li>Or here</li>
+						<li>Or here</li>
+					</ul>
+				</section>
+
+				<section>
+					<h2>Fantastic Ordered List</h2>
+					<ol>
+						<li>One is smaller than...</li>
+						<li>Two is smaller than...</li>
+						<li>Three!</li>
+					</ol>
+				</section>
+
+				<section>
+					<h2>Tabular Tables</h2>
+					<table>
+						<thead>
+							<tr>
+								<th>Item</th>
+								<th>Value</th>
+								<th>Quantity</th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<td>Apples</td>
+								<td>$1</td>
+								<td>7</td>
+							</tr>
+							<tr>
+								<td>Lemonade</td>
+								<td>$2</td>
+								<td>18</td>
+							</tr>
+							<tr>
+								<td>Bread</td>
+								<td>$3</td>
+								<td>2</td>
+							</tr>
+						</tbody>
+					</table>
+				</section>
+
+				<section>
+					<h2>Clever Quotes</h2>
+					<p>
+						These guys come in two forms, inline: <q cite="http://searchservervirtualization.techtarget.com/definition/Our-Favorite-Technology-Quotations">
+						&ldquo;The nice thing about standards is that there are so many to choose from&rdquo;</q> and block:
+					</p>
+					<blockquote cite="http://searchservervirtualization.techtarget.com/definition/Our-Favorite-Technology-Quotations">
+						&ldquo;For years there has been a theory that millions of monkeys typing at random on millions of typewriters would
+						reproduce the entire works of Shakespeare. The Internet has proven this theory to be untrue.&rdquo;
+					</blockquote>
+				</section>
+
+				<section>
+					<h2>Intergalactic Interconnections</h2>
+					<p>
+						You can link between slides internally,
+						<a href="#/2/3">like this</a>.
+					</p>
+				</section>
+
+				<section>
+					<h2>Speaker View</h2>
+					<p>There's a <a href="https://github.com/hakimel/reveal.js#speaker-notes">speaker view</a>. It includes a timer, preview of the upcoming slide as well as your speaker notes.</p>
+					<p>Press the <em>S</em> key to try it out.</p>
+
+					<aside class="notes">
+						Oh hey, these are some notes. They'll be hidden in your presentation, but you can see them if you open the speaker notes window (hit 's' on your keyboard).
+					</aside>
+				</section>
+
+				<section>
+					<h2>Export to PDF</h2>
+					<p>Presentations can be <a href="https://github.com/hakimel/reveal.js#pdf-export">exported to PDF</a>, here's an example:</p>
+					<iframe src="//www.slideshare.net/slideshow/embed_code/42840540" width="445" height="355" frameborder="0" marginwidth="0" marginheight="0" scrolling="no" style="border:3px solid #666; margin-bottom:5px; max-width: 100%;" allowfullscreen> </iframe>
+				</section>
+
+				<section>
+					<h2>Global State</h2>
+					<p>
+						Set <code>data-state="something"</code> on a slide and <code>"something"</code>
+						will be added as a class to the document element when the slide is open. This lets you
+						apply broader style changes, like switching the page background.
+					</p>
+				</section>
+
+				<section data-state="customevent">
+					<h2>State Events</h2>
+					<p>
+						Additionally custom events can be triggered on a per slide basis by binding to the <code>data-state</code> name.
+					</p>
+					<pre><code class="javascript" data-trim contenteditable style="font-size: 18px;">
+Reveal.addEventListener( 'customevent', function() {
+	console.log( '"customevent" has fired' );
+} );
+					</code></pre>
+				</section>
+
+				<section>
+					<h2>Take a Moment</h2>
+					<p>
+						Press B or . on your keyboard to pause the presentation. This is helpful when you're on stage and want to take distracting slides off the screen.
+					</p>
+				</section>
+
+				<section>
+					<h2>Much more</h2>
+					<ul>
+						<li>Right-to-left support</li>
+						<li><a href="https://github.com/hakimel/reveal.js#api">Extensive JavaScript API</a></li>
+						<li><a href="https://github.com/hakimel/reveal.js#auto-sliding">Auto-progression</a></li>
+						<li><a href="https://github.com/hakimel/reveal.js#parallax-background">Parallax backgrounds</a></li>
+						<li><a href="https://github.com/hakimel/reveal.js#keyboard-bindings">Custom keyboard bindings</a></li>
+					</ul>
+				</section>
+
+				<section style="text-align: left;">
+					<h1>THE END</h1>
+					<p>
+						- <a href="http://slides.com">Try the online editor</a> <br>
+						- <a href="https://github.com/hakimel/reveal.js">Source code &amp; documentation</a>
+					</p>
+				</section>
+
+			</div>
+
+		</div>
+
+		<script src="lib/js/head.min.js"></script>
+		<script src="js/reveal.js"></script>
+
+		<script>
+
+			// Full list of configuration options available at:
+			// https://github.com/hakimel/reveal.js#configuration
+			Reveal.initialize({
+				controls: true,
+				progress: true,
+				history: true,
+				center: true,
+
+				transition: 'slide', // none/fade/slide/convex/concave/zoom
+
+				// Optional reveal.js plugins
+				dependencies: [
+					{ src: 'lib/js/classList.js', condition: function() { return !document.body.classList; } },
+					{ src: 'plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+					{ src: 'plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+					{ src: 'plugin/highlight/highlight.js', async: true, condition: function() { return !!document.querySelector( 'pre code' ); }, callback: function() { hljs.initHighlightingOnLoad(); } },
+					{ src: 'plugin/zoom-js/zoom.js', async: true },
+					{ src: 'plugin/notes/notes.js', async: true },
+					{ src: 'plugin/math/math.js', async: true}
+				]
+			});
+
+		</script>
+
+	</body>  -->
+</html>
