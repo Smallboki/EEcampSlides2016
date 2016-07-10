@@ -67,6 +67,8 @@
 						<li>變數、條件、迴圈、函式</li>
 						<br>
 						<li>小練習</li>
+						<br>
+						<li>Breaduino Seven Tooth</li>
 					</ul>
 				</section>
 				<section>
@@ -351,10 +353,6 @@ int fact = factorial(10);
 						</ul></p>
 						<img src="pic/arduinoIDE_2.png">
 					</section>
-					<section>
-						<h2>開啟檔案</h2>
-						<img src="pic/arduinoIDE_3.png">
-					</section>
 				</section>
 				<section>
 					<section>
@@ -362,23 +360,48 @@ int fact = factorial(10);
 						<h2 class="fragment" style="color:#FFFF00">Seven tooth</h2>
 					</section>
 					<section>
-						<h2>breaduino</h2>
-						<p><ul> 
-							打開 breaduino.ino<br>
-							完成 todo1，todo2
-						</ul></p> 
+						<h2>開啟檔案</h2>
+						<p>打開 breaduino_bt.ino</p> 
+						<img src="pic/arduinoIDE_3.png">
 					</section>
 					<section>
 						<h2>mcp</h2>
-						<p>擴充ATTiny的pin</p>
-						<p>寫入output:</p>
-						<p>mcp.digitalWrite(pin index, HIGH/LOW)</p>
+						<p>擴充ATTiny的pin<br></p>
+						<p>如何寫入output?</p>
+						<p class="fragment">mcp.digitalWrite(pin index, HIGH/LOW)</p>
 					</section>
-						<section>
+					<section>
 						<h2>七段顯示器</h2>
 						<p>Seven-Section Display pins</p>
 						<p> A~G : mcp 的 0~6 </p>
 						<img src="pic/seven2.jpg">
+					</section>
+					<section>
+						<h2>delay()</h2>
+						<p>位於setup()和loop()中</p>
+						<p>使用單位為 ms<br>
+							delay(1000) 為延遲 1s
+						<p>可以調整 delay 的時間
+					</section>
+					<section>
+						<h2>breaduino</h2>
+						<p> 
+							完成 todo1,2,3
+						</p> 
+					</section>
+				</section>
+				<section>
+					<section>
+						<h2> Execute </h2>
+						<p> 上傳 arduino code 到 breaduino </p>
+						<img src="pic/arduino_upload.png">
+					</section>
+					<section>
+						<p><ul> 
+							<li>plog in your device : 插入USB</li><br>
+							<li>開始倒數 : 結束前插入藍牙模組</li><br>
+							<li>藍牙模組閃燈 : 開始接收藍牙訊息</li>
+						</ul></p>
 					</section>
 				</section>
 			</div>
