@@ -19,7 +19,7 @@
 
 		<!-- Code syntax highlighting -->
 		<link rel="stylesheet" href="lib/css/zenburn.css">
-		<link rel="stylesheet" href="font.css">
+
 		<!-- Printing and PDF exports -->
 		<script>
 			var link = document.createElement( 'link' );
@@ -38,245 +38,376 @@
 			<div class="slides">
 				<section>
 					<section>
-					<h1>Circuit</h1>
+					<h1>C++</h1>
 					<h1><span style="color:#FFFF00"> ×</span></h1>
 					<h1>Seven-Tooth</h1>
 					<p>
 						<small>Created by<b style="color:#FFFF00" > Teaching Group, EEcamp 2016</b></small>
 					</p> 
 				    </section>
-			  <section>
-				<h2 style="color:#FFFF00">Your Final Goal</h2>
-				<p>Seven-Tooth</p>
-			  </section>
-			  <section>
-			  <img src="pic/seventooth.jpg">
-			  </section>
-          <section>
-            <h2>Here We Go!!</h2>
-            <img src="pic/nunu.jpg">
-          </section>
+			  		<section>
+					<h2 style="color:#FFFF00">Your Final Goal</h2>
+					<p>Seven-Tooth</p>
+			  		</section>
+			  		<section>
+			  		<img src="pic/seventooth.jpg">
+			  		</section>
+          			<section>
+            		<h2>Here We Go!!</h2>
+            		<img src="pic/nunu.jpg">
+          			</section>
 				</section>
 				<section>
 					<h2>OUT LINE</h2>
 					<br>
 					<!--$ \int_{0}^{\infty} \frac{sin(x)}{x} dx = \frac{\pi}{2} $-->
 					<ul>
-						<li>Circuit Units</li>
+						<li>什麼是程式語言</li>
 						<br>
-						<li>Breaduino</li>
+						<li>變數、條件、迴圈、函式</li>
 						<br>
-						<li>Exercise</li>
+						<li>小練習</li>
+						<br>
+						<li>Breaduino Seven Tooth</li>
 					</ul>
 				</section>
 				<section>
 					<section>
-						<h2>Circuit Units</h2>
-						<ul>
-							<li>Bread Board</li>
-							<li>Resistor</li>
-							<li>Capacitor</li>
-							<li>Diode</li>
-							<li>LED</li>
-							<li>Switch</li>
-							<li>Seven-Section Display</li>
-							<li>Bluetooth</li>
-						</ul>
+						<h2>什麼是程式語言！？</h2>
+						<p>WTF is a Programming Language!?</p>
 					</section>
 					<section>
-						<h2>Bread Board</h2>
-						<img src="pic/bread.jpg">
-					</section>
+						<h2>跟</h2><h2 class="fragment" style="color:#FFFF00" >電腦</h2><h2>溝通的語言</h2>
+					</section>	
 					<section>
-						<h2 style="font-family:Microsoft JhengHei;">電阻</h2>
-						<p>Resistor</p>
-						<img src="pic/resistorsymbol.png">
+						<pre><code style="font-size: 36px; padding: 20px 20px;"class="c++" data-trim contenteditable>
+cout << "Hello, World";
+						</code></pre>
 					</section>
-					<section>
-						<h2>定值電阻</h2>
-						<img src="pic/resistor.jpg" style="width:300px">
-					</section>
-					<section>
-						<h2>色碼</h2>
-						<ul>
-						<li>
-						<a style="color:black">黑</a>
-						<a style="color:brown">棕</a>
-						<a style="color:red">紅</a>
-						<a style="color:orange">橙</a>
-						<a style="color:yellow">黃</a>
-						<a style="color:green">綠</a>
-						<a style="color:blue">藍</a>
-						<a style="color:purple">紫</a>
-						<a style="color:grey">灰</a>
-						<a style="color:white">白</a>
-						<a style="color:gold">金</a>
-						<a style="color:silver">銀</a>
-						</li>
-						<br>
-						<li>
-						<a style="color:black">&nbsp0&nbsp&nbsp</a>
-						<a style="color:brown">&nbsp1&nbsp&nbsp</a>
-						<a style="color:red">&nbsp2&nbsp</a>
-						<a style="color:orange">&nbsp3&nbsp</a>
-						<a style="color:yellow">&nbsp4&nbsp&nbsp</a>
-						<a style="color:green">&nbsp5&nbsp&nbsp</a>
-						<a style="color:blue">&nbsp6&nbsp&nbsp</a>
-						<a style="color:purple">&nbsp7&nbsp&nbsp</a>
-						<a style="color:grey">&nbsp8&nbsp&nbsp</a>
-						<a style="color:white">&nbsp9&nbsp&nbsp</a>
-						<a style="color:gold">5%</a>
-						<a style="color:silver">10%</a>
-						</li>
-						</ul>
-					</section>
-					<section>
-						<h2>舉例</h2>
-						<img src="pic/resistor2.jpg">
-						<br>
-						<a>(10 * </a><a style="color:orange">3</a><a>+</a><a style="color:white">9</a><a>) * 10 ^ </a><a style="color:yellow">4</a>
-					</section>
-					<section>
-						<h2>可變電阻</h2>
-						<img src="pic/resistor3.jpg">
-					</section>
-					<section>
-						<h2>電容</h2>
-						<p>Capacitor</p>
-						<img style="height:150px" src="pic/capacitor.jpg">
-						<img style="height:150px" src="pic/csymbol.png">
-					</section>
-					<section>
-						<h2>打個比方</h2>
-						<img src="pic/watertower.jpg">
-					</section>
-					<section>
-						<h2>二極體</h2>
-						<p>Diode</p>
-						<img style="height:150px" src="pic/diode.jpg">
-						<img style="height:150px"src="pic/dsymbol.png">
-					</section>
-					<section>
-            			<h2>打個比方</h2>
-            			<img style="width:400px" src="pic/dsymbol.png"><br>
-						<img style="width:400px" src="pic/oneway.jpg">
-					</section>
-					<section>
-						<h2>發光二極體</h2>
-						<p>LED</p>
-						<img style="width:300px" src="pic/led.jpg">
-					</section>
-					<section>
-						<h2>開關</h2>
-            			<p>switch</p>
-            			<img src="pic/switch.jpg">
-					</section>
-					<section>
-						<h2>七段顯示器</h2>
-						<p>Seven-Section Display</p>
-						<img src="pic/seven.jpg">
-					</section>
-					<section>
-            			<h2>如何接?</h2>
-            			<img style="height:300px" src="pic/sevenpin.jpg">
-						<img style="height:300px" src="pic/seven2.jpg">
-					</section>
-					<section>
-						<h2>藍牙</h2>
-						<p>Bluetooth</p>
-						<p>小範圍的無線電頻率技術
-							<ul>
-							<li>傳輸範圍：10m~100m</li>
-							<li>傳輸方向：不受限制</li>
-							<li>支援多個連接阜</li>
-							<li>發射功率低</li>
-						</p>
+					<section data-background="world.jpg">
+						<p style="font-size: 60px ">Hello, World!</p>
 					</section>
 				</section>
 				<section>
 					<section>
-            <h2>開發板</h2>
-            <img class="fragment" style="height:50px" src="pic/littlecomputer.jpg">
-					</section> 
-					<section>
-						<h2>Arduino</h2>
-						<img src="pic/arduino.jpg">
+						<h2>開始寫C++程式</h2>
 					</section>
 					<section>
-						<h2>"Bread"uino</h2>
-            <img src="pic/breaduino.jpg">
-            <p class="fragment">你們要接出</p>
-          </section>
-        </section>
-        <section>
-          <section>
-            <p style="font-size:100px">Don't Worry</p>
-            <p class="fragment" style="font-size:80px">Let's Do It Step by Step</p>
-          </section>
-          <section>
-            <h2>Step &nbsp&nbspI</h2>
-            <img style="height:400px" src="pic/step1.jpg">
-            <p class="fragment">插上ATTiny85和LED</p>
-          </section>
-          <section>
-            <p style="font-size:80px">ATTiny85腳位圖</p>
-            <img style="height:400px" src="pic/attinypin.jpg">
-          </section>
-          <section>
-            <h2>Step &nbsp&nbspII</h2>
-            <img style="height:450px" src="pic/step2.jpg">
-            <p class="fragment">注意二極體正負極</p>
-          </section>
-           <section>
-            <h2>Step &nbsp&nbspIII</h2>
-            <img style="height:450px" src="pic/step3.jpg">
-            <p class="fragment">接上電容和二極體(注意方向)</p>
-          </section>
-           <section>
-            <h2>Step &nbsp&nbspIV</h2>
-            <img style="height:450px" src="pic/step4.jpg">
-            <p class="fragment">接上USB</p>
-          </section>
-          <section>
-            <h2>Step &nbsp&nbspV</h2>
-            <img style="height:450px" src="pic/step5.jpg">
-          </section>
-          <section>
-            <h2>MCP23017接腳</h2>
-            <img src="pic/mcppin.jpg">
-          </section>
-          <section>
-            <h2>如果你接成這樣</h2>
-            <img src="pic/breaduino.jpg">
-            <p class="fragment">恭喜你！你完成了</p>
-          </section>
-          <section>
-            <p style="font-size:80px">Let's See What can Breaduino Do!</p>
-          </section>
-          <section>
-            <h2>接上七段顯示器</h2>
-            <img style="height:450px" src="pic/sevenbread.jpg">
-          </section>
-          <section>
-            <h2>如果一切正常</h2>
-            <p class="fragment" style="height:60px">七段顯示器會倒數</p>
-            <p class="fragment">預先寫好的code在教學手冊中</p>
-          </section>
+						<h1>IDE</h1>
+						<h3>整合式開發環境</h3>
+						<img src="pic/codeblocks.jpg"><img src="pic/devcpp.jpg">
+					</section>
+					<section>
+						<p style="font-size:60px">step1: 開啟CodeBlocks</p>
+						<p>方法: 點擊桌面圖示</p>
+						<img src="pic/codeblockswindows.jpg">
+					</section>
+					<section>
+						<h3>step2: 開啟一個空檔案</h3>
+						<p>方法: 如圖</p>
+						<img src="pic/createfile.jpg">
+						<p>注意：副檔名必須是".cpp"</p>
+					</section>
+					<section>
+						<h3>step3: 輸入code</h3>
+						<pre><code  style="font-size: 24px; padding: 20px 20px;"class="c++" data-trim contenteditable>
+#include<iostream> // 加入一些功能
 
-        </section>
-    
-		<section>
-          <section>
-			<h2>Survival Guide</h2>
-            <p class="fragment" data-fragment-index="0">If you have any problem,<br>
-              ask powerful team-leaders and teaching group : )
-            </p>
-          </section>
-		</section>
+using namespace std;
+
+int main(){ //程式從這裡開始
+
+	cout << "Hello, World" << endl; //印出""裡的字並換行
+	
+	// 這是註解
+	/*這也是註解*/
+	
+	retun 0; //程式結束
+	
+}
+						</code></pre>
+					</section>
+					<section>
+						<h3>step5: 編譯並執行</h3>
+						<p>按下F9</p>
+					</section>
+				</section>
+				<section>
+					<section>
+						<h2>變數</h2>
+						<p>Variables</p>
+					</section>
+					<section data-background="variable.jpg">
+						
+					</section>
+					<section>
+						<h3>舉個簡單的例子</h3>
+					<center>
+						<div style="width:900px">
+						<pre><code  style="font-size: 24px;"class="c++">
+int a = 1; //宣告"整數"型態變數a
+
+int b = 2;
+
+b = a + b;
+
+cout << a << endl;
+
+cout << b << endl;
+						</code></pre>
+					
+						</div>
+					</center>
+					</section>
+					<section>
+						<h3>各種變數型態</h3>
+						<ul>
+						<li>int</li>
+						<br><li>char</li>
+						<br><li>float</li>
+						<br><li>bool</li>
+						</ul>
+					</section>
+					<section>
+						<h2>陣列</h2>
+					　	<p>Array</p>
+					</section>
+					<section>
+						<center>
+						<div style="width:900px">
+						<pre><code  style="font-size: 24px;"class="c++">
+char answer[4];
+
+answer[0] = 'A';
+
+answer[1] = 'B';
+
+answer[2] = 'C';
+
+answer[3] = 'D';
+						</code></pre>					
+						</div>
+					</center>
+					</section>
+					<section>
+						<p>你也可以這樣做</p>
+						<center>
+						<div style="width:900px">
+						<pre><code  style="font-size: 24px;"class="c++">
+char answer[4] = {'A','B','C','D'};
+						</code></pre>					
+						</div>
+						</center>
+					</section>
+					<section>
+						<p>多維陣列<p>
+						<center>
+						<div style="width:900px">
+						<pre><code  style="font-size: 24px;"class="c++">
+char answer[3][4];
+
+answer[0][0] = 'Z';
+						</code></pre>					
+						</div>
+						</center>
+					</section>
+				</section>
+				<section>
+					<section>
+						<h2>條件</h2>
+						<p>Condition</p>
+					</section>
+					<section>
+						<h3>如果...就...否則</h3>
+						<pre><code  style="font-size: 24px; padding: 20px 20px;"class="python" data-trim contenteditable>
+if(林俊傑得金曲獎){
+	晚餐吃美式漢堡 //林俊傑得
+}
+else if(黃明志得金曲獎){
+	晚餐吃Donyum喝喝椰奶 //黃明志得
+}
+else{
+	吃水餃配貢丸湯 //兩個都沒得
+}
+						</code></pre>
+						
+					</section>
+				</section>
+				<section>
+					<section>
+						<h2>迴圈</h2>
+						<p>Loop</p>
+					</section>
+					<section>
+						<h2>重複的動作<h2>
+						<p>for while</p>
+					</section>
+					<section>
+						<h2>for</h2>
+						<pre><code  style="font-size: 24px; padding: 20px 20px;"class="python" data-trim contenteditable>
+for(初始值;條件;改變值){...}
+						</code></pre>
+					</section>
+					<section>
+						<h2>舉個例子</h2>
+						<pre><code  style="font-size: 24px; padding: 20px 20px;"class="python" data-trim contenteditable>
+for(int age = 0; age < 18 ; age++){
+	// age++ 就是 age = age + 1 的意思
+	cour << "我不用負全部的刑事責任" << endl;
+}
+						</code></pre>
+					</section>
+					<section>
+						<h2>while</h2>
+						<pre><code  style="font-size: 24px; padding: 20px 20px;"class="python" data-trim contenteditable>
+while(條件){...}
+						</code></pre>
+					</section>
+					<section>
+						<h2>同樣的例子</h2>
+						<pre><code  style="font-size: 24px; padding: 20px 20px;"class="python" data-trim contenteditable>
+int age = 0;
+while(age < 18){
+	cout << "我不用負全部的刑事責任" << endl;
+	age++;
+}
+						</code></pre>
+				 	</section>
+				 </section>
+				<section>
+					<section>
+						<h2>函式</h2>
+						<p>function</p>
+					</section>
+					<section>
+						<h2>函"數"</h2>
+						<p>y = f(x)</p>
+					</section>
+					<section>
+						<h2>例子</h2>
+						<p>階乘 Factorial</p>
+						<pre><code  style="font-size: 24px; padding: 20px 20px;"class="python" data-trim contenteditable>
+int factorial(int n){ //輸出型態為 int 輸入型態亦為 int
+	
+	int result = 1;
+	 
+	for(int i=1;i<=n;i++){
+	
+		result = result * i;
+		
+	}
+	
+	return result;
+}
+
+int fact = factorial(10);
+						</code></pre>
+					</section>
+				</section>
+				<section>
+					<section>
+						<h2>練習</h2>
+						<br>
+						<!--$ \int_{0}^{\infty} \frac{sin(x)}{x} dx = \frac{\pi}{2} $-->
+						<ul>
+							<li>pixmap</li>
+							<br>
+							<li>circle_pork</li>
+						</ul>
+					</section>
+					<section>
+						<h2>Survival Guide</h2>
+		            	<p class="fragment" data-fragment-index="0">If you have any problem,<br>
+		            		ask powerful team-leaders and teaching group : )
+		            	</p>
+		          	</section>
+		          	<section>
+		          		<h2><li>pixmap</li></h2>
+		          		<p> 在黑白視窗中印出圖案 </p>
+						<p><ul> 打開資料夾 pixmap 中的 main.cpp <br> 
+						  		並完成函式 printData() 
+						</ul></p>
+					</section>
+					<section>
+						<h2><li>circle_pork</li></h2>
+						<p>c++只能在黑白視窗底下做事嗎？</p>
+						<p class="fragment" style="color:#FFFF00" >當然不是</p>
+						<p><ul> 打開資料夾 circle_pork 中的 main.cpp <br> 
+						  		並完成函式 JudgeWinner() 
+						</ul></p>
+					</section>
+				</section>
+				<section>
+					<section>
+						<h2>Arduino</h2>
+						<img src="pic/arduino_cover.png">
+					</section>
+					<section>
+						<h2>開啟Arduino</h2>
+						<img src="pic/arduinoIDE_1.png">
+					</section>
+					<section>
+						<p><ul>
+							<li>setup()</li>
+							<li>loop()</li>
+						</ul></p>
+						<img src="pic/arduinoIDE_2.png">
+					</section>
+				</section>
+				<section>
+					<section>
+						<h2>Final Goal</h2>
+						<h2 class="fragment" style="color:#FFFF00">Seven tooth</h2>
+					</section>
+					<section>
+						<h2>開啟檔案</h2>
+						<p>打開 breaduino_bt.ino</p> 
+						<img src="pic/arduinoIDE_3.png">
+					</section>
+					<section>
+						<h2>mcp</h2>
+						<p>擴充ATTiny的pin<br></p>
+						<p>如何寫入output?</p>
+						<p class="fragment">mcp.digitalWrite(pin index, HIGH/LOW)</p>
+					</section>
+					<section>
+						<h2>七段顯示器</h2>
+						<p>Seven-Section Display pins</p>
+						<p> A~G : mcp 的 0~6 </p>
+						<img src="pic/seven2.jpg">
+					</section>
+					<section>
+						<h2>delay()</h2>
+						<p>位於setup()和loop()中</p>
+						<p>使用單位為 ms<br>
+							delay(1000) 為延遲 1s
+						<p>可以調整 delay 的時間
+					</section>
+					<section>
+						<h2>breaduino</h2>
+						<p> 
+							完成 todo1,2,3
+						</p> 
+					</section>
+				</section>
+				<section>
+					<section>
+						<h2> Execute </h2>
+						<p> 上傳 arduino code 到 breaduino </p>
+						<img src="pic/arduino_upload.png">
+					</section>
+					<section>
+						<p><ul> 
+							<li>plog in your device : 插入USB</li><br>
+							<li>開始倒數 : 結束前插入藍牙模組</li><br>
+							<li>藍牙模組閃燈 : 開始接收藍牙訊息</li>
+						</ul></p>
+					</section>
+				</section>
 			</div>
       </div>
 
-</body>	
+	</body>	
 
 <!--	<body>
 
