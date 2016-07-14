@@ -140,7 +140,7 @@ int main(){ //程式從這裡開始
 	// 這是註解
 	/*這也是註解*/
 	
-	retun 0; //程式結束
+	return 0; //程式結束
 	
 }
 						</code></pre>
@@ -187,7 +187,8 @@ cout << b << endl;
 					</section>
 					<section>
 						<h2>陣列</h2>
-					　	<p>Array</p>
+						<p>array</p>
+						<img style="height:500px" src="pic/array.png">
 					</section>
 					<section>
 						<center>
@@ -219,6 +220,9 @@ char answer[4] = {'A','B','C','D'};
 					</section>
 					<section>
 						<p>多維陣列<p>
+						<img style="height:500px" src="pic/array_2d.jpeg">
+					</section>
+					<section>
 						<center>
 						<div style="width:900px">
 						<pre><code  style="font-size: 24px;"class="c++">
@@ -251,6 +255,9 @@ char answer[3][4] =
 						<p>Condition</p>
 					</section>
 					<section>
+						<img src="pic/if_else.jpg">
+					</section>
+					<section>
 						<h3>如果...就...否則</h3>
 						<pre><code  style="font-size: 24px; padding: 20px 20px;"class="c++" data-trim contenteditable>
 if(林俊傑得金曲獎){
@@ -265,54 +272,80 @@ else{
 						</code></pre>
 					</section>
 					<section>
-						<h2>善用條件</h2>
-						<p><ul>
-							<li>比較: &lt, &lt=, &gt=, &gt, ==, != </li>
-							<li>是非: &&, || </li>
-						</ul><p>
+						<h2>比較</h2>
+						<p><table>
+							<tr>
+								<th><center>符號</center></th>
+								<th><center>意義</center></th>
+							</tr>
+							<tr>
+								<td><center>&lt</center></td>
+								<td><center>小於</center></td>
+							</tr>
+							<tr>
+								<td><center>&lt=</center></td>
+								<td><center>小於等於</center></td>
+							</tr>
+							<tr>
+								<td><center>&gt</center></td>
+								<td><center>大於</center></td>
+							</tr>
+							<tr>
+								<td><center>&gt=</center></td>
+								<td><center>大於等於</center></td>
+							</tr>
+							<tr>
+								<td><center>==</center></td>
+								<td><center>等於</center></td>
+							</tr>
+							<tr>
+								<td><center>!=</center></td>
+								<td><center>不等於</center></td>
+							</tr>
+						</table></p>
 					</section>
 					<section>
-						<h2>示範1</h2>
-						<p>不夠好的寫法</p>
 						<pre><code  style="font-size: 24px; padding: 20px 20px;"class="c++" data-trim contenteditable>
 int a = 5;	//不一定要是 5, 也可以是其他數字
 if(a > 7){
 	cout << "a > 7" << endl;
 }
-else if(a <= 7){
-	cout << "a <= 7" << endl;
-}
-else{
-	cout << "This is so redundant!" << endl;
-}
-						</code></pre>
-					</section>
-					<section>
-						<p>好的寫法</p>
-						<pre><code  style="font-size: 24px; padding: 20px 20px;"class="c++" data-trim contenteditable>
-int a = 5;	//不一定要是 5, 也可以是其他數字
-if(a > 7){
-	cout << "a > 7" << endl;
-}
 else{
 	cout << "a <= 7" << endl;
 }
 						</code></pre>
 					</section>
 					<section>
-						<h2>示範2</h2>
-						<p>不夠好的寫法</p>
+						<h2>邏輯</h2>
+						<p><table>
+							<tr>
+								<th><center>符號</center></th>
+								<th><center>意義</center></th>
+							</tr>
+							<tr>
+								<td><center>&&</center></td>
+								<td><center>而且</center></td>
+							</tr>
+							<tr>
+								<td><center>||</center></td>
+								<td><center>或者</center></td>
+							</tr>
+						</table></p>
+						<img style="height:400px;" src="pic/venn_diagram.jpg" >
+					</section>
+
+					<section>
 						<pre><code  style="font-size: 24px; padding: 20px 20px;"class="c++" data-trim contenteditable>
 int a = 92;	//不一定要是 92, 也可以是其他數字
+
 if(633 < a){
 	if(a < 689){
+
 		cout << "633 < a and a < 689";
 	}
+
 }
 						</code></pre>
-					</section>
-					<section>
-						<p>好的寫法</p>
 						<pre><code  style="font-size: 24px; padding: 20px 20px;"class="c++" data-trim contenteditable>
 int a = 92;	//不一定要是 92, 也可以是其他數字
 
@@ -330,36 +363,43 @@ if(633 < a && a < 689){	//絕對不可以寫 if(633 < a < 689) !!!
 					</section>
 					<section>
 						<h2>重複的動作</h2>
-						<p>for & while</p>
+						<p>while & for</p>
 					</section>
 					<section>
-						<p style="font-size: 80px">for</p>
+						<p style="font-size: 80px">while</p>
 						<pre><code  style="font-size: 24px; padding: 20px 20px;"class="c++" data-trim contenteditable>
-for(初始值;條件;改變值){...}
+while(條件){...}
+						</code></pre>
+						<pre><code  style="font-size: 24px; padding: 20px 20px;"class="c++" data-trim contenteditable>
+while(還沒睡飽){
+
+	睡覺	//會一直睡到睡飽為止
+}
 						</code></pre>
 					</section>
 					<section>
 						<h2>舉個例子</h2>
 						<pre><code  style="font-size: 24px; padding: 20px 20px;"class="c++" data-trim contenteditable>
-for(int age = 0; age < 18 ; age++){
-	// age++ 就是 age = age + 1 的意思
+int age = 0;
+while(age < 18){
+
 	cout << "我不用負全部的刑事責任" << endl;
+	age++; // age++ 就是 age = age + 1 的意思
 }
 						</code></pre>
 					</section>
 					<section>
-						<p style="font-size:80px">while</p>
+						<p style="font-size:80px">for</p>
 						<pre><code  style="font-size: 24px; padding: 20px 20px;"class="c++" data-trim contenteditable>
-while(條件){...}
+for(初始值;條件;改變值){...}
 						</code></pre>
 					</section>
 					<section>
 						<h2>同樣的例子</h2>
 						<pre><code  style="font-size: 24px; padding: 20px 20px;"class="c++" data-trim contenteditable>
-int age = 0;
-while(age < 18){
+for(int age = 0; age < 18 ; age++){
+
 	cout << "我不用負全部的刑事責任" << endl;
-	age++;
 }
 						</code></pre>
 				 	</section>
@@ -384,7 +424,7 @@ for(int i = 0; i < 3; i++)
 }
 						</code></pre>
 					</section>
-				 </section>
+				</section>
 				<section>
 					<section>
 						<h2>函式</h2>
@@ -493,6 +533,9 @@ int main()
 						<h2>breaduino_bt.ino</h2>
 						<p>go through</p>
 					</section>
+					<section>
+			  		<img src="pic/seventooth.png">
+			  		</section>
 					<section>
 						<h2>mcp</h2>
 						<p>擴充ATTiny的pin<br></p>
