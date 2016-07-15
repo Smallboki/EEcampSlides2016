@@ -48,6 +48,7 @@
 			  		<section>
 						<h2 style="color:#FFFF00">Your Final Goal</h2>
 						<p>Seven-Tooth</p>
+						<img style="height:384px" src="pic/seventooth_cover.png">
 			  		</section>
 			  		<section>
 			  			<img src="pic/seventooth.png">
@@ -84,8 +85,12 @@
 						</ul>
 					</section>
 					<section>
-						<h2>Bread Board</h2>
+						<h3>Bread Board</h2>
 						<img src="pic/bread.jpg">
+					</section>
+					<section>
+						<h3>Usage</h2>
+						<img style="height:500px" src="pic/breadboard_usage.png">
 					</section>
 					<section>
 						<h2 style="font-family:Microsoft JhengHei;">電阻</h2>
@@ -137,6 +142,14 @@
 						<a>(10 * </a><a style="color:orange">3</a><a>+</a><a style="color:white">9</a><a>) * 10 ^ </a><a style="color:yellow">4</a>
 					</section>
 					<section>
+						<h2>小測驗</h2>
+						<p>我們會用到的電阻</p>
+						<img style="height:240px" src="pic/resistor_22.png">
+						<img style="height:240px" src="pic/resistor_1000.png">
+						<img style="height:240px" src="pic/resistor_1500.png">
+						<img style="height:240px" src="pic/resistor_2000.png">
+					</section>
+					<section>
 						<h2>固定電容</h2>
 						<p>Fixed Capacitor</p>
 						<img style="height:150px" src="pic/capacitor.jpg">
@@ -149,14 +162,18 @@
 					<section>
 						<h2>電解電容</h2>
 						<p>Polarized Capacitor</p>
-						<img src="pic/polarized_capacitor.jpg">
-						<img src="pic/polarized_capacitor_symbol.jpg">
+						<img style="height:300px" src="pic/polarized_capacitor.jpg">
+						<img style="height:300px" src="pic/polarized_capacitor_symbol.jpg">
+						<p style="color:#FFFF00">有方向性 <br>
+							接反會爆炸
+						</p>
 					</section>
 					<section>
 						<h2>二極體</h2>
 						<p>Diode</p>
 						<img style="height:150px" src="pic/diode.jpg">
 						<img style="height:150px"src="pic/dsymbol.png">
+						<p style="color:#FFFF00">有方向性</p>
           			</section>
 					<section>
             			<h2>打個比方</h2>
@@ -187,27 +204,20 @@
 						<h2>Circuit Units</h2>
 						<p>cont.</p>
 						<ul>
+							<li>ATtiny85</li>
+							<li>mcp23017</li>
 							<li>Seven-Section Display</li>
 							<li>Bluetooth</li>
-							<li>ATTiny</li>
-							<li>mcp23017</li>
 						</ul>
 					</section>
 					<section>
-						<h2>七段顯示器</h2>
-						<p>Seven-Section Display</p>
-						<img src="pic/seven.jpg">
-					</section>
-					<section>
-			            <h2>如何接?</h2>
-			            <img style="height:300px" src="pic/sevenpin.jpg">
-						<img style="height:300px" src="pic/seven2.jpg">
-					</section>
-		            <section>
 		            	<p style="font-size:70px">ATtiny85</p>
 		            	<a style="color:white">The high-performance, low-power Atmel 8-bit AVR RISC-based </a>
 		            	<a style="color:yellow">microcontroller</a><br>
 		            	<img style="height:300px" src="pic/attiny85.jpg">
+		          	</section>
+		          	<section>
+		          		<img style="height:400px" src="pic/attinypin.jpg">
 		          	</section>
 		          	<section>
 		            	<h2>microcontroller</h2>
@@ -219,6 +229,16 @@
 		            	<p>用來擴充ATtiny85的pin腳</p>
 		            	<img style="height:300px" src="pic/mcp23017.jpg">
 		          	</section>
+					<section>
+						<h2>七段顯示器</h2>
+						<p>Seven-Section Display</p>
+						<img src="pic/seven.jpg">
+					</section>
+					<section>
+			            <h2>如何接?</h2>
+			            <img style="height:300px" src="pic/sevenpin.jpg">
+						<img style="height:300px" src="pic/seven2.jpg">
+					</section>
 		        </section>	
         		<section>
 					<section>
@@ -287,6 +307,9 @@
 			        <section>
 			            <h2>如果一切正常</h2>
 			            <p class="fragment" style="height:60px">七段顯示器會倒數</p>
+			            <p class="fragment" style="height:60px">
+			            	因為我們先寫好程式在ATtiny85裡面了~
+			            </p>
 			            <p class="fragment">預先寫好的code在教學手冊中</p>
 			        </section>
 		    </section>
@@ -304,16 +327,31 @@
 		            <img style="height:300px" src="pic/bluetooth.jpg">
 		        </section>
 				<section>
-					<h2>藍牙</h2>
+					<h2>藍芽</h2>
 					<p>Bluetooth</p>
-					<p>小範圍的無線電傳輸技術
-              <ul>
-              <li>傳輸頻率：2.4~2.485GHz</li>
-							<li>傳輸範圍：10m~100m</li>
-							<li>傳輸方向：不受限制</li>
-							<li>支援多個連接埠</li>
-							<li>發射功率低</li>
-						</p>
+					<p>小範圍的無線電傳輸技術</p>
+					<br><p><table>
+						<tr style="color:#8080FF">
+							<th><center>特點</center></th>
+							<th><center>藍芽</center></th>
+							<th><center>WiFi</center></th>
+						</tr>
+						<tr>
+							<td><center>應用</center></td>
+							<td><center>一對一</center></td>
+							<td><center>整個網路</center></td>
+						</tr>
+						<tr>
+							<td><center>基地台</center></td>
+							<td><center>不用</center></td>
+							<td><center>需要</center></td>
+						</tr>
+						<tr>
+							<td><center>功率</center></td>
+							<td><center>低</center></td>
+							<td><center>高</center></td>
+						</tr>
+					</table></p></br>
           </section>
           <section>
             <h2>藍芽接法</h2>
